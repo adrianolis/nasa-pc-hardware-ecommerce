@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NASA</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="viagem-ao-espaco.webp" alt="Logo NASA">
+            <span>NASA</span>
+        </div>
+        <nav>
+            <a href="index.html">Página inicial</a>
+            <a href="promocoes.html">Promoções</a>
+            <a href="mais-vendidos.html">Mais vendidos</a>
+        </nav>
+        <div class="header-buttons">
+            <a href="login.html" class="login-btn">Entre ou Cadastre-se</a>
+            <a href="carrinho.html" class="cart-btn">
+                <img src="carrinho-carrinho.webp" alt="Carrinho">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="color: #7F3FBE">Login</h1>
+        <form id="loginForm" action="processar_login.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <div class="password-field">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <button type="button" id="togglePassword">Mostrar</button>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="options">
+                <a href="recuperacao.html" style="color:#7F3FBE">Recuperação de Senha</a>
+                <a href="cadastro.html" style="color:#7F3FBE">Cadastre-se</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Entre em Contato</h3>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@nasa.com</p>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook.webp" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="twitter.webp" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <h3>Métodos de Pagamento</h3>
+                <img src="recibo.webp" alt="Boleto">
+                <img src="cartao.webp" alt="Cartão">
+                <img src="paypal.webp" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const togglePassword = document.getElementById("togglePassword");
+            const passwordInput = document.getElementById("senha");
+            const loginForm = document.getElementById("loginForm");
+            const emailInput = document.getElementById("email");
+
+            togglePassword.addEventListener("click", () => {
+                const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+                passwordInput.setAttribute("type", type);
+                togglePassword.textContent = type === "password" ? "Mostrar" : "Esconder";
+            });
+
+            loginForm.addEventListener("submit", (e) => {
+                const email = emailInput.value.trim();
+                const password = passwordInput.value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !password) {
+                    alert("Por favor, preencha todos os campos.");
+                    e.preventDefault();
+                }
+                if (!emailRegex.test(email)) {
+                    alert("Por favor, insira um e-mail válido.");
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

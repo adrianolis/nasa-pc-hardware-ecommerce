@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - NASA</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="viagem-ao-espaco.webp" alt="Logo NASA">
+            <span>NASA</span>
+        </div>
+        <nav>
+            <a href="index.html">Página inicial</a>
+            <a href="promocoes.html">Promoções</a>
+            <a href="mais-vendidos.html">Mais vendidos</a>
+        </nav>
+        <div class="header-buttons">
+            <a href="login.html" class="login-btn">Entre ou Cadastre-se</a>
+            <a href="carrinho.html" class="cart-btn">
+                <img src="carrinho-carrinho.webp" alt="Carrinho">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <form id="cadastroForm" action="cadastro_action.php" method="POST">
+            <h1>Cadastro</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required minlength="6">
+
+            <button type="submit">Cadastrar</button>
+            <p style="color: #CFAFD7">Já possui uma conta? <a href="login.html" style="color: #9550A7;">Fazer login</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Entre em Contato</h3>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@nasa.com</p>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook.webp" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="twitter.webp" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <h3>Métodos de Pagamento</h3>
+                <img src="recibo.webp" alt="Boleto">
+                <img src="cartao.webp" alt="Cartão">
+                <img src="paypal.webp" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+    <script src="cadastro.js"></script>
+</body>
+</html>

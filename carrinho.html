@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho de Compras - NASA</title>
+  <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="viagem-ao-espaco.webp" alt="Logo NASA" />
+      <span>NASA</span>
+    </div>
+    <nav>
+      <a href="index.html">Página Principal</a>
+      <a href="promocoes.html">Promoções</a>
+      <a href="mais-vendidos.html">Mais Vendidos</a>
+    </nav>
+    <div class="header-buttons">
+      <a href="login.html" class="login-btn">Entre ou Cadastre-se</a>
+      <a href="carrinho.html" class="cart-btn">
+        <img src="carrinho-carrinho.webp" alt="Carrinho" width="40" height="40" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart">
+      <h1>Seu Carrinho</h1>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <tr>
+            <td>
+              <img src="gprosuperlight.webp" alt="Mouse G Pro Superlight" />
+              <p>Mouse G Pro Superlight</p>
+            </td>
+            <td data-price="800">R$ 800</td>
+            <td><input type="number" value="1" min="1" class="quantity-input" /></td>
+            <td class="item-total">R$ 800</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="mouseg102.webp" alt="Mouse Logitech G102" />
+              <p>Mouse G102</p>
+            </td>
+            <td data-price="200">R$ 200</td>
+            <td><input type="number" value="2" min="1" class="quantity-input" /></td>
+            <td class="item-total">R$ 400</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="gabineteliketec.webp" alt="Gabinete Liketec" />
+              <p>Gabinete Liketec</p>
+            </td>
+            <td data-price="1200">R$ 1200</td>
+            <td><input type="number" value="1" min="1" class="quantity-input" /></td>
+            <td class="item-total">R$ 1200</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="actions">
+      <button class="continue-btn" aria-label="Continuar comprando">Continuar Comprando</button>
+      <button class="checkout-btn" aria-label="Ir para o pagamento">Ir para o Pagamento</button>
+    </section>
+
+    <section class="summary">
+      <h2>Total: <span id="cart-total">R$ 2400</span></h2>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact-info">
+      <h3>Entre em Contato</h3>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Email: contato@nasa.com</p>
+      <div class="social-media">
+        <a href="#"><img src="facebook.webp" alt="Facebook" /></a>
+        <a href="#"><img src="instagram.webp" alt="Instagram" /></a>
+        <a href="#"><img src="twitter.webp" alt="Twitter" /></a>
+      </div>
+    </section>
+    <section class="payment-methods">
+      <h3>Métodos de Pagamento</h3>
+      <img src="recibo.webp" alt="Boleto Bancário" />
+      <img src="cartao.webp" alt="Cartão de Crédito" />
+      <img src="paypal.webp" alt="PayPal" />
+    </section>
+  </footer>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="viagem-ao-espaco.webp" alt="Logo NASA" width="40" height="40">
+            NASA
+        </div>
+        <nav class="menu">
+            <a href="index.html">Página principal</a>
+            <a href="promocoes.html">Promoções</a>
+            <a href="mais-vendidos.html">Mais Vendidos</a>
+        </nav>
+        <button class="login-btn" aria-label="Login ou cadastro">Entre ou Cadastre-se</button>
+    </header>
+
+    <main class="container">
+        <section class="shipping-section">
+            <h2>Escolha a forma de envio</h2>
+            <form id="shipping-form">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="12345-678">
+                <button type="button" id="alter-shipping">Alterar envio</button>
+                <div class="shipping-options">
+                    <label>
+                        <input type="radio" name="shipping" value="correios">
+                        <span>Correios - 3 dias - R$ 13,70</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="shipping" value="jadlog">
+                        <span>Jadlog - 6 dias - R$ 10,20</span>
+                    </label>
+                </div>
+                <div class="address-fields">
+                    <input type="text" placeholder="Endereço">
+                    <input type="text" placeholder="Número">
+                    <input type="text" placeholder="Complemento">
+                    <input type="text" placeholder="Referência">
+                    <input type="text" placeholder="Bairro">
+                    <input type="text" placeholder="Cidade">
+                    <input type="text" placeholder="Estado">
+                    <input type="text" placeholder="País">
+                </div>
+            </form>
+        </section>
+
+        <section class="payment-section">
+            <h2>Escolha a forma de pagamento</h2>
+            <div class="payment-options">
+                <button type="button" class="drawer-btn" data-target="#drawer-boleto">Boleto</button>
+                <button type="button" class="drawer-btn" data-target="#drawer-cartao">Cartão</button>
+                <button type="button" class="drawer-btn" data-target="#drawer-paypal">PayPal</button>
+            </div>
+            <div id="drawer-boleto" class="drawer">
+                <h3>Pagamento por Boleto</h3>
+                <p>Após a confirmação do pedido, um boleto será gerado.</p>
+            </div>
+            <div id="drawer-cartao" class="drawer">
+                <h3>Pagamento com Cartão</h3>
+                <form>
+                    <input type="text" placeholder="Nome no Cartão" required>
+                    <input type="text" placeholder="Número do Cartão" required>
+                    <input type="text" placeholder="Validade (MM/AA)" required>
+                    <input type="text" placeholder="CVV" required>
+                    <button type="submit"><a href="confirmação.html">Confirmar Pagamento</a></button>
+                </form>
+            </div>
+            <div id="drawer-paypal" class="drawer">
+                <h3>Pagamento com PayPal</h3>
+                <p>Você será redirecionado para o PayPal para concluir o pagamento.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Entre em Contato</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@nasa.com</p>
+        </div>
+        <div class="payment-methods">
+            <p>Métodos de Pagamento</p>
+            <img src="cartao.webp" alt="Cartão" width="24">
+            <img src="paypal.webp" alt="PayPal" width="24">
+            <img src="recibo.webp" alt="Boleto" width="24">
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

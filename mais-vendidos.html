@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mais Vendidos - NASA</title>
+  <link rel="stylesheet" href="mais-vendidos.css" />
+  <script src="mais-vendidos.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="viagem-ao-espaco.webp" alt="Logo NASA" width="40" height="40"/>
+      <span>NASA</span>
+    </div>
+    <nav>
+      <a href="index.html">Página principal</a>
+      <a href="promocoes.html">Promoções</a>
+      <a href="mais-vendidos.html" class="active">Mais Vendidos</a>
+    </nav>
+    <div class="header-buttons">
+      <a href="login.html" class="login-btn">Entre ou Cadastre-se</a>
+      <a href="carrinho.html" class="cart-btn">
+        <img src="carrinho-carrinho.webp" alt="Carrinho" width="20" height="20" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="section-title">Produtos Mais Vendidos</h1>
+    <section class="filter">
+      <label for="rating-filter">Filtrar por Avaliação:</label>
+      <select id="rating-filter">
+        <option value="all">Todos</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆ ou mais</option>
+      </select>
+    </section>
+    <section class="product-grid">
+      <article class="product-card" data-rating="5">
+        <a href="checkout.html">
+          <img src="gprosuperlight.webp" alt="Mouse G Pro Superlight" />
+          <p>Mouse G Pro Superlight</p>
+          <div class="stars">★★★★★</div>
+          <p>R$ 800</p>
+        </a>
+      </article>
+      <article class="product-card" data-rating="4">
+        <a href="checkout.html">
+          <img src="mouseg102.webp" alt="Mouse G102" />
+          <p>Mouse G102</p>
+          <div class="stars">★★★★☆</div>
+          <p>R$ 100</p>
+        </a>
+      </article>
+      <article class="product-card" data-rating="5">
+        <a href="checkout.html">
+          <img src="tecladologitechgprox60.webp" alt="Teclado Logitech G Pro x 60" />
+          <p>Teclado Logitech G Pro x 60</p>
+          <div class="stars">★★★★★</div>
+          <p>R$ 1200</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h2>Entre em Contato</h2>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Email: contato@nasa.com</p>
+      <div class="social-media">
+        <a href="#"><img src="facebook.webp" alt="Facebook" width="20" height="20" /></a>
+        <a href="#"><img src="instagram.webp" alt="Instagram" width="20" height="20" /></a>
+        <a href="#"><img src="twitter.webp" alt="Twitter" width="20" height="20" /></a>
+      </div>
+    </div>
+    <div class="payment-methods">
+      <h2>Métodos de Pagamento</h2>
+      <img src="recibo.webp" alt="Boleto" width="20" height="20" />
+      <img src="cartao.webp" alt="Cartão" width="20" height="20" />
+      <img src="paypal.webp" alt="PayPal" width="20" height="20" />
+    </div>
+  </footer>
+</body>
+</html>
