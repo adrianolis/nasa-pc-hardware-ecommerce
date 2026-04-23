@@ -1,14 +1,28 @@
 # 🚀 NASA Store
 
-> E-commerce de produtos gamer e acessórios tech — projeto de conclusão de curso
+> Projeto de Conclusão de Curso — SENAC 2024 ✅ Aprovado!
 
 ---
 
 ## 📖 Sobre o Projeto
 
-A **NASA Store** é um site de e-commerce voltado para a venda de produtos gamer e acessórios de tecnologia. Desenvolvido como projeto de conclusão de curso, o site conta com uma interface moderna, navegação intuitiva e layout responsivo com Bootstrap.
+A **NASA Store** é um site de e-commerce voltado para a venda de produtos gamer e acessórios de tecnologia. Desenvolvido como projeto de conclusão de curso no **SENAC em 2024**, o projeto foi apresentado e **aprovado pela banca avaliadora**.
 
-🔗 **Acesse o site:** [seu-usuario.github.io/nasa](https://seu-usuario.github.io/nasa/)
+O site conta com uma interface moderna, navegação intuitiva, layout responsivo com Bootstrap e diversas páginas funcionais incluindo carrinho de compras, checkout e sistema de login.
+
+🔗 **Acesse o site:** [adrianolis.github.io/nasa-senac-2024](https://adrianolis.github.io/nasa-senac-2024/)
+
+---
+
+## 👨‍💻 Equipe
+
+| Nome |
+|---|
+| Moisés Carlos Oliveira Ribeiro Da Silva |
+| Marcos Fillipe Da Silva |
+| João Victor Santos Gomes Do Nascimento |
+| Paulo Vitor Santiago De Melo |
+| Adriano Lisarb Guzman Moura Batista |
 
 ---
 
@@ -43,7 +57,7 @@ A **NASA Store** é um site de e-commerce voltado para a venda de produtos gamer
 ## 📁 Estrutura de Arquivos
 
 ```
-nasa/
+nasa-senac-2024/
 │
 ├── — Páginas HTML —
 ├── index.html
@@ -110,12 +124,12 @@ nasa/
 
 ### Online
 Acesse diretamente pelo link do deploy:
-**[seu-usuario.github.io/nasa](https://seu-usuario.github.io/nasa/)**
+**[adrianolis.github.io/nasa-senac-2024](https://adrianolis.github.io/nasa-senac-2024/)**
 
 ### Localmente
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nasa.git
+   git clone https://github.com/adrianolis/nasa-senac-2024.git
    ```
 2. Abra o arquivo `index.html` diretamente no navegador.
 
@@ -125,19 +139,13 @@ Acesse diretamente pelo link do deploy:
 
 ## ⚠️ Observações
 
-As funcionalidades de login, cadastro e recuperação de senha requerem um servidor com PHP e banco de dados MySQL para funcionar completamente. No deploy estático (GitHub Pages), essas páginas são exibidas mas o processamento do formulário não é executado.
+As funcionalidades de login, cadastro e recuperação de senha requerem um servidor com PHP e banco de dados MySQL para funcionar completamente. No deploy estático via GitHub Pages, essas páginas são exibidas normalmente mas o processamento dos formulários não é executado.
 
 ---
 
 ## 📌 Status do Projeto
 
-🚧 **Em desenvolvimento** — projeto criado como trabalho acadêmico de conclusão de curso.
-
----
-
-## 👤 Autor
-
-Feito com 💙 como projeto de conclusão de curso.
+✅ **Concluído e aprovado** — projeto apresentado e aprovado pela banca avaliadora do SENAC em 2024.
 
 ---
 
