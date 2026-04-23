@@ -1,0 +1,260 @@
+/* Reset e variáveis */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d1aed8;
+  --header-bg: #c396d6;
+  --primary-text: #333;
+  --white: #ffffff;
+  --cta-bg: #ffd700;
+  --cta-text: #3b0d54;
+  --highlight: #5dbcf0;
+  --button-bg: #7f3fbe;
+  --banner-bg: #3b0d54;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: var(--button-bg);
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--white);
+  margin-bottom: 40px; /* Adiciona espaço abaixo do header */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-large);
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-btn,
+.cart-btn {
+  background-color: var(--button-bg);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.cart-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+main {
+  margin: 0 auto;
+  width: 320px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 1em;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background-color: #f0efeb;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--highlight);
+  background-color: #fff;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--white);
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #7faaf2;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+footer {
+  background-color: var(--banner-bg);
+  padding: 1rem 0;
+  color: var(--white);
+  width: 100%;
+  margin-top: 2.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.social-media img,
+.payment-methods img {
+  width: 24px;
+}
+
+/* Reset e Variáveis */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d1aed8;
+  --header-bg: #c396d6;
+  --primary-text: #333;
+  --white: #ffffff;
+  --cta-bg: #ffd700;
+  --cta-text: #3b0d54;
+  --highlight: #5dbcf0;
+  --button-bg: #7f3fbe;
+  --banner-bg: #3b0d54;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+
+form {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+button:hover {
+  background-color: var(--highlight);
+}
+
+button[type="submit"] {
+  background-color: var(--button-bg); /* Cor de fundo principal */
+  color: var(--white); /* Cor do texto */
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px; /* Tamanho confortável */
+  font-size: 1.1em; /* Tamanho do texto */
+  font-weight: bold; /* Negrito para destaque */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transições suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+button[type="submit"]:hover {
+  background-color: var(--highlight); /* Cor de destaque ao passar o mouse */
+  color: var(--cta-text); /* Texto com contraste */
+  transform: translateY(-3px); /* Efeito de elevação */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+button[type="submit"]:active {
+  transform: translateY(0); /* Remove elevação ao clicar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida */
+  background-color: #6a2da6; /* Tom mais escuro ao pressionar */
+}

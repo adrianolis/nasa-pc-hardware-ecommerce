@@ -1,0 +1,129 @@
+/* Reset e Variáveis */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d1aed8;
+  --header-bg: #c396d6;
+  --text-color: #333;
+  --white: #ffffff;
+  --highlight-color: #7f3fbf;
+  --footer-bg: #3b0d54;
+  --button-bg: #7f3fbf;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilizações atualizadas de outros elementos aqui */
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: var(--highlight-color);
+}
+
+.social-media img:hover {
+  transform: rotate(15deg);
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--highlight-color);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+
+nav a {
+  margin: 0 1rem;
+}
+
+.header-buttons a {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.header-buttons a:hover {
+  opacity: 0.9;
+}
+
+/* Main Section */
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--highlight-color);
+  font-size: 1.8rem;
+}
+
+.filter {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.product-card {
+  background-color: var(--header-bg);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 30rem;
+  margin-top: 16.8rem;
+}

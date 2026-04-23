@@ -1,0 +1,90 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b184c1;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    color: white;
+}
+
+.header .menu a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #875fa0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.confirmation-container {
+    padding: 20px;
+    background-color: #f7f2f8;
+    text-align: center;
+}
+
+.confirmation-box {
+    background-color: #d3bce2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.confirmation-box h2 {
+    color: #4b2d65;
+}
+
+.payment-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #c8a7da;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment-status .checkmark {
+    font-size: 2em;
+    color: green;
+    margin-right: 10px;
+}
+
+.order-info {
+    background-color: #d3bce2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.order-info h3 {
+    color: #4b2d65;
+    margin-bottom: 10px;
+}
+
+.order-info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.footer {
+    background-color: #b184c1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 11.3rem;
+}

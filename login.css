@@ -1,0 +1,311 @@
+/* Reset e variáveis */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d1aed8;
+  --header-bg: #c396d6;
+  --primary-text: #333;
+  --white: #ffffff;
+  --cta-bg: #ffd700;
+  --cta-text: #3b0d54;
+  --highlight: #5dbcf0;
+  --button-bg: #7f3fbf;
+  --banner-bg: #3b0d54;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+}
+
+/* Estilo Geral */
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.home-link {
+  font-size: var(--font-size-medium);
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--header-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #b87fc1;
+}
+
+/* Título da página */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: var(--primary-text);
+}
+
+/* Estilo do formulário principal */
+main {
+  margin: 0px auto;
+  width: 320px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+/* Campos do Formulário */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: var(--font-size-medium);
+  color: var(--primary-text);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background-color: #f0efeb;
+  font-size: var(--font-size-medium);
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--highlight);
+  background-color: var(--white);
+  outline: none;
+}
+
+/* Botão de Login */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: var(--white);
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: #6d36a5;
+}
+
+/* Links de recuperação de senha e cadastro */
+.options {
+  margin-top: 20px;
+}
+
+.options a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--highlight);
+  font-size: var(--font-size-small);
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--white); /* Adiciona espaço abaixo do header */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente, se necessário */
+  gap: 0.5rem;
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  height: 100%; /* Garante que a logo ocupe toda a altura do header */
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-btn,
+.cart-btn {
+  background-color: var(--button-bg);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.cart-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+main {
+  margin: 0 auto;
+  width: 320px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  margin-top: 80px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 1em;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  background-color: #f0efeb;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--highlight);
+  background-color: #fff;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--white);
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #7faaf2;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+footer {
+  background-color: var(--banner-bg);
+  padding: 2rem 0;
+  color: var(--white);
+  width: 100%;
+  margin-top: 9.09rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.social-media img,
+.payment-methods img {
+  width: 24px;
+}
+
+/* Botão aprimorado */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: none;
+  box-shadow: 0px 4px 6px var(--shadow-color);
+}
+
+button:hover {
+  background-color: #6d36a5;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #5a2b94;
+  transform: translateY(0);
+}

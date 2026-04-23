@@ -1,0 +1,243 @@
+/* === Reset e Variáveis === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: d1aed8;
+  --header-bg: #c396d6;
+  --primary-text: #333;
+  --white: #ffffff;
+  --cta-bg: #7f3fbf;
+  --cta-text: #ffffff;
+  --highlight: #ffd700;
+  --button-bg: #7f3fbf;
+  --button-hover: #005f99;
+  --footer-bg: #c396d6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-small: 0.875rem;
+  --font-medium: 1rem;
+  --font-large: 1.5rem;
+  --border-radius: 8px;
+}
+
+/* === Estilização Global === */
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Cabeçalho === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-medium);
+}
+
+nav a:hover {
+  color: var(--cta-bg);
+  text-decoration: underline;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-btn,
+.cart-btn {
+  background-color: var(--cta-bg);
+  color: var(--cta-text);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart-btn img {
+  width: 24px;
+}
+
+.login-btn:hover,
+.cart-btn:hover {
+  background-color: var(--highlight);
+  color: var(--white);
+}
+
+/* === Formulário Principal === */
+main {
+  margin: 50px auto;
+  margin-top: 150px;
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px var(--shadow-color);
+  text-align: center;
+}
+
+.recuperar {
+  color: var(--button-bg);
+  margin-bottom: 20px;
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: var(--font-medium);
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #dcdcdc;
+  background-color: #f0efeb;
+  font-size: var(--font-medium);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--highlight);
+  background-color: #fff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--white);
+  font-size: 1.1em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.lembrar-senha {
+  color: var(--cta-bg);
+  margin-top: 10px;
+}
+
+.lembrar-senha a {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lembrar-senha a:hover {
+  text-decoration: underline;
+}
+
+/* === Rodapé === */
+footer {
+  background-color: var(--footer-bg);
+  padding: 2rem 0;
+  color: var(--white);
+  text-align: center;
+  margin-top: 13.3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-content h3 {
+  font-size: var(--font-medium);
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: var(--font-small);
+}
+
+.social-media img,
+.payment-methods img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+.social-media img:hover,
+.payment-methods img:hover {
+  filter: brightness(1.2);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: var(--font-small);
+  }
+
+  main {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
